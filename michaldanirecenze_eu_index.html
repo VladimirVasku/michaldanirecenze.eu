@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Recenze firmy — michaldanirecenze.eu</title>
+  <meta name="description" content="Jednoduchá recenze jedné firmy a kontakt na Michala Daniho.">
+  <style>
+    :root{--maxw:900px;--accent:#0b83d6;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;margin:0;padding:24px;background:#f7f9fb;color:#0b0b0b}
+    .wrap{max-width:var(--maxw);margin:24px auto;background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(11,11,11,0.06);overflow:hidden}
+    header{padding:28px 28px 18px;border-bottom:1px solid #eef2f6}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:8px 0 0;color:var(--muted)}
+    main{display:grid;grid-template-columns:1fr;gap:20px;padding:22px}
+    .review{padding:18px;border:1px solid #f0f3f6;border-radius:10px;background:linear-gradient(180deg,#ffffff, #fcfdfe)}
+    .company{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:10px;background:#eef6ff;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .meta{font-size:14px}
+    .rating{margin-left:auto;font-weight:700;color:var(--accent)}
+    .text{margin-top:12px;color:#111}
+    .quote{font-style:italic;color:#222;margin:12px 0;padding-left:12px;border-left:3px solid #e6eef9}
+    .contact{padding:18px;border-radius:10px;border:1px dashed #e6eef9;background:#fbfeff}
+    .contact h3{margin:0 0 8px}
+    a.button{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:8px;text-decoration:none;background:var(--accent);color:white}
+    footer{padding:18px;border-top:1px solid #eef2f6;font-size:13px;color:var(--muted);text-align:center}
+    @media (min-width:720px){main{grid-template-columns:2fr 1fr}}
+    small.time{color:var(--muted);display:block;margin-top:6px}
+  </style>
+  <!-- Structured data: review + contact -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "Organization",
+      "name": "Název firmy - nahraďte",
+      "url": "https://www.priklad-firmy.cz"
+    },
+    "reviewRating": {"@type":"Rating","ratingValue":4,"bestRating":5},
+    "author": {"@type":"Person","name":"Michal Dani"},
+    "datePublished": "2025-09-18",
+    "reviewBody": "Tady vložte vlastní text recenze."
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Recenze jedné firmy</h1>
+      <p class="lead">Stručná recenze + kontakt. Hotové k okamžitému nasazení na tvou doménu.</p>
+    </header>
+    <main>
+      <section class="review" aria-label="Recenze firmy">
+        <div class="company">
+          <div class="logo">F</div>
+          <div>
+            <div style="font-weight:700">Název firmy — <span style="font-weight:600;color:var(--muted)">Sídlo nebo město</span></div>
+            <div class="meta">Kategorie: služby / e-shop / atd. <small class="time">Recenze publikována: 18. 9. 2025</small></div>
+          </div>
+          <div class="rating" title="Hodnocení">★★★★☆</div>
+        </div>
+
+        <div class="text">
+          <p class="quote">„Toto je ukázková recenze — nahraď text konkrétním hodnocením firmy. Popiš službu, komunikaci, cenu a výsledek.“</p>
+          <p>Detaily: Firma dodržela termín, komunikace byla vstřícná a výsledek odpovídal ceně. Pokud potřebuješ, přidej konkrétní body, fotografie nebo dokumenty.</p>
+        </div>
+      </section>
+
+      <aside class="contact" aria-label="Kontakt">
+        <h3>Kontakt — Michal Dani</h3>
+        <p>Jestli máš dotaz nebo chceš doplnit recenzi, napiš mi:</p>
+        <p style="margin:6px 0"><strong>Email:</strong> <a href="mailto:tvuj.email@priklad.cz">tvuj.email@priklad.cz</a><br>
+        <strong>Telefon:</strong> <a href="tel:+420123456789">+420 123 456 789</a></p>
+        <p style="font-size:13px;color:var(--muted)">Poznámka: nahraď kontaktní údaje reálnými informacemi v souboru <code>index.html</code>.</p>
+        <a class="button" href="mailto:tvuj.email@priklad.cz">Napsat mi</a>
+      </aside>
+    </main>
+    <footer>
+      © <strong>Michal Dani</strong> — michaldanirecenze.eu
+    </footer>
+  </div>
+</body>
+</html>
